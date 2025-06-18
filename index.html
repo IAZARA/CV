@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Interactivo - Iván Zarate | Especialista en Implementación de IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+    <!-- Animated background particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Language Selector -->
+    <div class="fixed top-4 right-4 z-50">
+        <div class="bg-slate-800/90 backdrop-blur-md rounded-full p-2 border border-slate-600">
+            <button id="langToggle" class="flex items-center space-x-2 px-4 py-2 rounded-full bg-teal-600 hover:bg-teal-700 text-white font-medium transition-all duration-300">
+                <i class="fas fa-globe"></i>
+                <span id="currentLang">ES</span>
+                <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+            
+            <!-- Left Column (Sidebar) -->
+            <aside class="lg:col-span-1 lg:sticky top-8 h-fit space-y-8">
+                <section class="reveal card p-8 rounded-2xl text-center floating">
+                    <div class="relative inline-block">
+                        <img src="Principal.jpg" alt="Foto de Iván Zarate" class="w-36 h-36 rounded-full mx-auto mb-4 profile-image object-cover">
+                    </div>
+                    <h1 class="text-4xl font-bold text-white mb-2">Iván Zarate</h1>
+                    <h2 class="text-lg font-medium gradient-text mb-4 text-center" data-key="profileTitle">Especialista en Estrategia e Implementación de IA</h2>
+                    <div class="mt-6 space-y-4 text-sm">
+                        <div class="space-y-3">
+                            <a href="mailto:ivan.agustin.95@gmail.com" title="ivan.agustin.95@gmail.com" class="inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105 w-full">
+                                <i class="fas fa-envelope mr-2 text-lg"></i>
+                                <span data-key="contactGmail">Gmail Personal</span>
+                            </a>
+                            <a href="mailto:ivan.zarate@minseg.gob.ar" title="ivan.zarate@minseg.gob.ar" class="inline-flex items-center justify-center bg-blue-800 hover:bg-blue-900 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105 w-full">
+                                <i class="fas fa-briefcase mr-2 text-lg"></i>
+                                <span data-key="contactOfficial">Correo Oficial</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ivan-agustin-zarate/" target="_blank" title="Ver perfil de LinkedIn" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105 w-full">
+                                <i class="fab fa-linkedin mr-2 text-lg"></i>
+                                LinkedIn
+                            </a>
+                        </div>
+                        <p class="flex items-center justify-center text-slate-300 hover:text-teal-300 transition-colors">
+                            <i class="fas fa-map-marker-alt contact-icon mr-3 text-sky-400"></i>
+                            Buenos Aires, Argentina
+                        </p>
+                    </div>
+                </section>
+                
+                <section class="reveal card p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+                        <i class="fas fa-brain mr-3 text-teal-400"></i>
+                        <span data-key="keySkills">Competencias Clave</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <!-- AI & Technology -->
+                        <div>
+                            <h4 class="text-sm font-semibold text-teal-300 mb-2 uppercase tracking-wide" data-key="artificialIntelligence">🤖 Inteligencia Artificial</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag text-xs">Estrategia de IA</span>
+                                <span class="tag text-xs">ChatGPT</span>
+                                <span class="tag text-xs">Claude</span>
+                                <span class="tag text-xs">Gemini</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Development & Automation -->
+                        <div>
+                            <h4 class="text-sm font-semibold text-sky-300 mb-2 uppercase tracking-wide" data-key="developmentAutomation">⚙️ Desarrollo & Automatización</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag text-xs">Python</span>
+                                <span class="tag text-xs">APIs</span>
+                                <span class="tag text-xs">JSON</span>
+                                <span class="tag text-xs">N8N</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Leadership & Analysis -->
+                        <div>
+                            <h4 class="text-sm font-semibold text-purple-300 mb-2 uppercase tracking-wide" data-key="leadershipAnalysis">👥 Liderazgo & Análisis</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag text-xs">Liderazgo</span>
+                                <span class="tag text-xs">Análisis de Datos</span>
+                                <span class="tag text-xs">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="reveal card p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+                        <i class="fas fa-globe mr-3 text-teal-400"></i>
+                        <span data-key="languages">Idiomas</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-slate-200" data-key="spanish">Español</span>
+                                <span class="text-teal-400" data-key="native">Nativo</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="100"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-slate-200" data-key="english">Inglés</span>
+                                <span class="text-sky-400" data-key="intermediate">Intermedio (B1)</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </aside>
+
+            <!-- Right Column (Main Content) -->
+            <div class="lg:col-span-2 space-y-8">
+                <section class="reveal card p-10 rounded-2xl relative">
+                    <div class="neural-network">
+                        <svg width="100%" height="100%" viewBox="0 0 400 200">
+                            <defs>
+                                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#grid)" />
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-6 flex items-center">
+                        <i class="fas fa-user-tie mr-4 text-teal-400"></i>
+                        <span data-key="professionalProfile">Perfil Profesional</span>
+                    </h3>
+                    <div class="space-y-4 text-slate-300 leading-relaxed relative z-10">
+                        <p class="text-lg" data-key="profileDescription">
+                            <strong class="font-semibold gradient-text">Especialista en Inteligencia Artificial</strong> con experiencia como Analista de Sistemas y Coordinador de área técnica.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4 mt-6">
+                            <div class="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+                                <h4 class="font-semibold text-teal-400 mb-2 flex items-center">
+                                    <i class="fas fa-bullseye mr-2"></i><span data-key="focus">Enfoque</span>
+                                </h4>
+                                <p class="text-sm" data-key="focusDescription">Resolución de problemas complejos mediante estrategias de IA</p>
+                            </div>
+                            <div class="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+                                <h4 class="font-semibold text-sky-400 mb-2 flex items-center">
+                                    <i class="fas fa-cogs mr-2"></i><span data-key="specialty">Especialidad</span>
+                                </h4>
+                                <p class="text-sm" data-key="specialtyDescription">Integración de soluciones que optimizan procesos y reducen costos</p>
+                            </div>
+                        </div>
+                        <p class="text-base mt-4 text-center font-medium text-teal-300" data-key="quote">
+                            💡 <em>"Lidero iniciativas donde la IA es el motor para hacer más, más rápido y mejor"</em>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="reveal">
+                    <h3 class="text-3xl font-bold text-white mb-8 flex items-center">
+                        <i class="fas fa-briefcase mr-4 text-teal-400"></i>
+                        <span data-key="professionalExperience">Experiencia Profesional</span>
+                    </h3>
+                    <div class="relative">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card p-6 rounded-xl">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="ai-badge" data-key="current">Actualidad</span>
+                                    <i class="fas fa-chart-network text-teal-400 text-xl"></i>
+                                </div>
+                                <h4 class="font-bold text-xl text-white mt-2" data-key="dataSystemAnalyst">Data & System Analyst / Coordinador de Área Técnica</h4>
+                                <p class="font-semibold text-sky-400 mb-4" data-key="nationalSecurityMinistry">Ministerio de Seguridad Nacional</p>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="space-y-3">
+                                        <h5 class="font-semibold text-teal-300 text-sm uppercase tracking-wide" data-key="technicalLeadership">Liderazgo Técnico</h5>
+                                        <div class="bg-slate-800/30 p-3 rounded-lg">
+                                            <p class="text-sm text-slate-300" data-key="technicalCoordination">• Coordinación de área técnica</p>
+                                            <p class="text-sm text-slate-300" data-key="analysisSupervision">• Supervisión de análisis y desarrollo</p>
+                                            <p class="text-sm text-slate-300" data-key="taskFlowPlanning">• Planificación de flujo de tareas</p>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-3">
+                                        <h5 class="font-semibold text-sky-300 text-sm uppercase tracking-wide" data-key="automation">Automatización</h5>
+                                        <div class="bg-slate-800/30 p-3 rounded-lg">
+                                            <p class="text-sm text-slate-300" data-key="n8nWorkflows">• <strong>N8N workflows</strong> automatizados</p>
+                                            <p class="text-sm text-slate-300" data-key="apiIntegration">• Integración de APIs y tecnologías</p>
+                                            <p class="text-sm text-slate-300" data-key="dataAnalysisOptimization">• Análisis de datos para optimización</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card p-6 rounded-xl">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-sm font-medium text-sky-400">2016 - Actualidad</span>
+                                    <i class="fas fa-shield-alt text-sky-400 text-xl"></i>
+                                </div>
+                                <h4 class="font-bold text-xl text-white mt-2" data-key="federalPoliceOfficer">Oficial de Policía Federal</h4>
+                                <p class="font-semibold text-sky-400 mb-4" data-key="argentineFederalPolice">Policía Federal Argentina</p>
+                                <div class="bg-slate-800/30 p-4 rounded-lg">
+                                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                        <div>
+                                            <span class="font-medium text-sky-300" data-key="keyCompetencies">🎯 Competencias clave:</span>
+                                            <p class="text-slate-300 mt-1" data-key="pressureProblemSolving">Resolución de problemas bajo presión</p>
+                                        </div>
+                                        <div>
+                                            <span class="font-medium text-sky-300" data-key="organizationalExperience">🏢 Experiencia organizacional:</span>
+                                            <p class="text-slate-300 mt-1" data-key="complexProcesses">Comprensión de procesos complejos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card p-6 rounded-xl">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-sm font-medium text-sky-400">2013 - 2015</span>
+                                    <i class="fas fa-building text-slate-400 text-xl"></i>
+                                </div>
+                                <h4 class="font-bold text-xl text-white mt-2" data-key="administrativeAssistant">Auxiliar Administrativo</h4>
+                                <p class="font-semibold text-sky-400 mb-4">COTO CICSA</p>
+                                <div class="bg-slate-800/30 p-4 rounded-lg">
+                                    <p class="text-sm text-slate-300">
+                                        <span class="font-medium text-slate-300" data-key="foundations">📋 Fundamentos:</span> <span data-key="administrativeHRExperience">Experiencia en procesos administrativos y RRHH</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="reveal">
+                    <h3 class="text-3xl font-bold text-white mb-8 flex items-center">
+                        <i class="fas fa-graduation-cap mr-4 text-teal-400"></i>
+                        <span data-key="academicBackground">Formación Académica</span>
+                    </h3>
+                    <div class="grid gap-6 md:grid-cols-2">
+                        <div class="card p-6 rounded-2xl">
+                            <div class="flex items-start mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-teal-400 to-sky-400 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-laptop-code text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-white leading-tight" data-key="systemsAnalyst">Analista de Sistemas</h4>
+                                    <p class="font-medium text-teal-400 text-sm" data-key="ortInstitute">Instituto Superior ORT</p>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800/30 p-3 rounded-lg">
+                                <p class="text-sm text-slate-300" data-key="architectureFocus">🏗️ <strong>Enfoque:</strong> Arquitectura y lógica de sistemas</p>
+                                <p class="text-sm text-slate-300 mt-1" data-key="aiApplication">🤖 <strong>Aplicación:</strong> Base para integración de IA</p>
+                            </div>
+                        </div>
+                        <div class="card p-6 rounded-2xl">
+                            <div class="flex items-start mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-sky-400 to-purple-400 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-search text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-white leading-tight" data-key="criminalInvestigationDegree">Lic. en Investigación Criminal</h4>
+                                    <p class="font-medium text-sky-400 text-sm" data-key="pfaUniversity">Instituto Universitario de la PFA</p>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800/30 p-3 rounded-lg">
+                                <p class="text-sm text-slate-300" data-key="analyticalFocus">🧠 <strong>Enfoque:</strong> Mentalidad analítica y metódica</p>
+                                <p class="text-sm text-slate-300 mt-1" data-key="problemSolvingApplication">🔍 <strong>Aplicación:</strong> Resolución de problemas complejos</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
